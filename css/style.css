@@ -5,8 +5,11 @@
 }
 h1,
 h2 {
-   /* background-color: cadetblue; */
    color: brown;
+}
+.animate__bounce {
+   animation: bounce;
+   animation-duration: 2s;
 }
 h3,
 p {
@@ -21,18 +24,45 @@ p {
 .Blacktea,
 .Greentea,
 .Heabaltea {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    background-color: dimgrey;
    padding: 10px;
    margin: 20px;
 }
-.Blacktea-img,
-.Greentea-img,
-.Heabaltea-img {
-   transition: all 0.9s ease-in-out;
+/*animation*/
+.Blacktea__img,
+.Greentea__img,
+.Heabaltea__img {
    width: 300px;
    background-color: dimgrey;
+   padding-bottom: 5px;
+   animation-name: img;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
 }
-/*@keyframes imgZoom {
-    from {transform: : scale(1) rotate(0deg);}
-    to {transform: scale(1.1) rotate(15deg);}
-} */
+/*hover effect has transition*/
+button {
+   background-color: gold;
+   padding: 10px;
+   margin: 30px 0;
+   transition: all 0.9s ease-in-out;
+}
+button:hover {
+   background-color: brown;
+   color: azure;
+   transition-property: all;
+}
+@keyframes img {
+   0% {
+      transform: scale(1) rotate(0deg);
+   }
+   50% {
+      transform: scale(1.1) rotate(10deg);
+   }
+   100% {
+      transform: scale(1) rotate(0deg);
+   }
+}
