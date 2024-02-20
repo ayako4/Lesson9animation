@@ -1,0 +1,38 @@
+* {
+   font-family: "Times New Roman", Times, serif;
+   background-color: cadetblue;
+   padding: 5px 10px;
+}
+h1,
+h2 {
+   /* background-color: cadetblue; */
+   color: brown;
+}
+h3,
+p {
+   background-color: dimgrey;
+   color: beige;
+}
+.container {
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+}
+.Blacktea,
+.Greentea,
+.Heabaltea {
+   background-color: dimgrey;
+   padding: 10px;
+   margin: 20px;
+}
+.Blacktea-img,
+.Greentea-img,
+.Heabaltea-img {
+   transition: all 0.9s ease-in-out;
+   width: 300px;
+   background-color: dimgrey;
+}
+/*@keyframes imgZoom {
+    from {transform: : scale(1) rotate(0deg);}
+    to {transform: scale(1.1) rotate(15deg);}
+} */
